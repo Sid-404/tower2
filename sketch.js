@@ -71,7 +71,7 @@ function setup() {
   ball = Bodies.circle(50,200,20);
   World.add(world,ball);
 
-  sling = new Chain(this.ball,{x:150, y:160});
+  sling = new Chain (this.ball,{x:150, y:160});
 
 }
 
@@ -140,7 +140,7 @@ function mouseReleased(){
 function keyPressed(){
 	if(keyCode === 32)
 	{
-    sling.attach(ball.body);
+    sling.attach(this.ball);
 
 	}
 }
